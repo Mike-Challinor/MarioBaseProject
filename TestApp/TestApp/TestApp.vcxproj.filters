@@ -18,5 +18,25 @@
     <ClCompile Include="TestApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDL2\SDL\SDL2.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="SDL2\SDL\SDL2_image.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="SDL2\SDL\SDL2_mixer.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="SDL2\SDL\SDL2main.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+    <Library Include="SDL2\SDL\SDL2test.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
   </ItemGroup>
 </Project>
