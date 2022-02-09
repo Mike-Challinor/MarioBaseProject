@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\MarioBaseProject\MarioBaseProject\TestApp\Debug\TestApp.exe</FullPath>
+      <FullPath>C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
