@@ -1,5 +1,7 @@
 #include "Texture2D.h"
+#include <SDL.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include <iostream>
 using namespace std;
 
@@ -65,7 +67,7 @@ void Texture2D::Free()
 		m_height = 0;
 	}
 }
-void Texture2D::Render(Vector2D new_position, SDL_RenderFlip flip, double angle)
+void Texture2D::Render(Vector2D new_position, SDL_RendererFlip flip, double angle)
 {
 	//Set where to render the texture
 	SDL_Rect renderLocation = { 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT };

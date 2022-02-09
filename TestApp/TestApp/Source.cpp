@@ -11,14 +11,13 @@ using namespace std;
 //Globals
 SDL_Window* g_window = nullptr;
 SDL_Renderer* g_renderer = nullptr;
+Texture2D* g_texture = nullptr;
 
 //Function Prototypes
 bool InitSDL();
 void CloseSDL();
 bool Update();
 void Render();
-SDL_Texture* LoadTextureFromFile(string path);
-void FreeTexture();
 
 int main(int argc, char* args[])
 {
@@ -85,8 +84,8 @@ bool InitSDL()
 		}
 
 		//Load the background texture
-		g_texture = LoadTextureFromFile("Images/Test.bmp");
-		if (g_texture == nullptr)
+		g_texture = new Texture2D(g_renderer);
+		if (!g_texture->LoadFromFile("Images/test.bmp"))
 		{
 			return false;
 		}
@@ -107,12 +106,13 @@ void CloseSDL()
 	IMG_Quit();
 	SDL_Quit();
 
-	//Clear the texture
-	FreeTexture();
-
 	//Release the renderer
 	SDL_DestroyRenderer(g_renderer);
 	g_renderer = nullptr;
+
+	//Release the texture
+	delete g_texture;
+	g_texture = nullptr;
 }
 
 bool Update()
@@ -160,6 +160,8 @@ void Render()
 	//Clear the screen
 	SDL_SetRenderDrawColor(g_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 	SDL_RenderClear(g_renderer);
+
+	g_texture->Render(Vector2D(), SDL_FLIP_NONE);
 
 	//Update the screen
 	SDL_RenderPresent(g_renderer);
