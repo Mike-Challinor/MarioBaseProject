@@ -11,13 +11,21 @@ SDL_Window* g_window = nullptr;
 //Function Prototypes
 bool InitSDL();
 void CloseSDL();
+bool Update();
 
 int main(int argc, char* args[])
 {
 	//check if SDL was setup correctly
 	if (InitSDL())
 	{
-		SDL_Delay(5000);
+		//flag to check if we wish to quit
+		bool quit = false;
+
+		//Game loop
+		while (!quit)
+		{
+			quit = Update();
+		}
 	}
 
 	CloseSDL();
@@ -64,4 +72,44 @@ void CloseSDL()
 	//quit SDL subsystems
 	IMG_Quit();
 	SDL_Quit();
+}
+
+bool Update()
+{
+	//Event handler
+	SDL_Event e;
+
+	//Get events
+	SDL_PollEvent(&e);
+
+	//Handle the events
+	switch (e.type)
+	{
+
+		//Click the 'X' to quit
+	case SDL_QUIT:
+		return true;
+		break;
+
+		//Click the 'Q' key to quit
+	case SDL_KEYUP:
+		switch (e.key.keysym.sym)
+		{
+		case SDLK_q:
+			return true;
+			break;
+		}
+
+	case SDL_MOUSEBUTTONDOWN:
+		switch (e.button.button)
+		{
+		case SDL_BUTTON_RIGHT:
+			return true;
+			break;
+		}
+
+	}
+
+	return false;
+
 }
