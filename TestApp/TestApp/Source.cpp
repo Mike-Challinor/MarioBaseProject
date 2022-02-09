@@ -85,10 +85,29 @@ bool Update()
 	//Handle the events
 	switch (e.type)
 	{
+
 		//Click the 'X' to quit
 	case SDL_QUIT:
 		return true;
 		break;
+
+		//Click the 'Q' key to quit
+	case SDL_KEYUP:
+		switch (e.key.keysym.sym)
+		{
+			case SDLK_q:
+				return true;
+				break;
+		}
+	
+	case SDL_MOUSEBUTTONDOWN:
+		switch (e.button.button)
+		{
+		case SDL_BUTTON_RIGHT:
+			return true;
+			break;
+		}
+
 	}
 
 	return false;
