@@ -78,7 +78,6 @@ bool Update()
 {
 	//Event handler
 	SDL_Event e;
-	SDL_Event e2;
 
 	//Get events
 	SDL_PollEvent(&e);
