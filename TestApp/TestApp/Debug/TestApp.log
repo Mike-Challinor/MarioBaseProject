@@ -1,1 +1,3 @@
-﻿  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
+﻿  Source.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Source.cpp(81,12): warning C4101: 'e2': unreferenced local variable
+  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
