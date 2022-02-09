@@ -14,6 +14,14 @@ void CloseSDL();
 
 int main(int argc, char* args[])
 {
+	//check if SDL was setup correctly
+	if (InitSDL())
+	{
+		SDL_Delay(5000);
+	}
+
+	CloseSDL();
+
 	return 0;
 }
 
@@ -42,9 +50,18 @@ bool InitSDL()
 			return false;
 		}
 	}
+
+	return true;
+
 }
 
 void CloseSDL()
 {
+	//release the window
+	SDL_DestroyWindow(g_window);
+	g_window = nullptr;
 
+	//quit SDL subsystems
+	IMG_Quit();
+	SDL_Quit();
 }
