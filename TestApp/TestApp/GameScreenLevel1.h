@@ -13,7 +13,7 @@ private:
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);
-	~GameScreenLevel1;
+	~GameScreenLevel1();
 
 	void Render() override;
 	void Update(float deltaTime, SDL_Event e) override;
