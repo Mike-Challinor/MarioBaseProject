@@ -1,8 +1,4 @@
 #include "GameScreen.h"
-#include <SDL.h>
-#include <SDL_image.h>
-#include <SDL_mixer.h>
-#include <iostream>
 
 GameScreen::GameScreen(SDL_Renderer* renderer)
 {
