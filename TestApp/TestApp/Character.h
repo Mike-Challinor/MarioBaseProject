@@ -2,6 +2,7 @@
 #ifndef _CHARACTER_H
 #define _CHARACTER_H
 #include <iostream>
+#include <string>
 #include <SDL.h>
 #include "Commons.h"
 
