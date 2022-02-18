@@ -1,8 +1,2 @@
-﻿  Character.cpp
-  GameScreenLevel1.cpp
-  GameScreenManager.cpp
-  Source.cpp
-  Texture2D.cpp
-  Generating Code...
-  LINK : C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe not found or not built by the last incremental link; performing full link
+﻿  GameScreenLevel1.cpp
   TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
