@@ -34,6 +34,7 @@ int main(int argc, char* args[])
 		//set the time
 		g_old_time = SDL_GetTicks();
 
+
 		//flag to check if we wish to quit
 		bool quit = false;
 
@@ -93,9 +94,7 @@ bool InitSDL()
 			cout << "Renderer could not initialise. Error: " << SDL_GetError();
 		}
 
-		//Load the background texture
 		
-				
 	}
 
 	return true;

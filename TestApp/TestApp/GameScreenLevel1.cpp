@@ -14,14 +14,13 @@ GameScreenLevel1::~GameScreenLevel1()
 	m_background_texture = nullptr;
 }
 
-void GameScreenLevel1::Render() {}
-
-void GameScreenLevel1::Update(float deltaTime, SDL_Event e) 
+void GameScreenLevel1::Render()
 {
 	//draw the background
 	m_background_texture->Render(Vector2D(), SDL_FLIP_NONE);
-
 }
+
+void GameScreenLevel1::Update(float deltaTime, SDL_Event e) {}
 
 bool GameScreenLevel1::SetUpLevel()
 {
