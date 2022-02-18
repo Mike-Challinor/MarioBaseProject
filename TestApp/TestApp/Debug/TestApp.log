@@ -1,2 +1,5 @@
-﻿  Source.cpp
-  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
+﻿  Character.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(18,36): error C2061: syntax error: identifier 'string'
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.cpp(4,46): error C2061: syntax error: identifier 'string'
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.cpp(7,15): error C2065: 'start_position': undeclared identifier
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.cpp(11,31): error C2065: 'imagePath': undeclared identifier
