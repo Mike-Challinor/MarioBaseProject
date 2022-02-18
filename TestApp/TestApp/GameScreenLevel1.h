@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _GAMESCREENLEVEL1_H
+#define _GAMESCREENLEVEL1_H
 #include "GameScreen.h"
 #include "Commons.h"
 
@@ -22,3 +24,4 @@ private:
 	bool SetUpLevel();
 };
 
+#endif //_GAMESCREENLEVEL1_H

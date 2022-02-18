@@ -1,4 +1,2 @@
-﻿  Source.cpp
-  Texture2D.cpp
-  Generating Code...
-  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
+﻿Source.obj : error LNK2019: unresolved external symbol "void __cdecl CloseSDL(void)" (?CloseSDL@@YAXXZ) referenced in function _SDL_main
+C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe : fatal error LNK1120: 1 unresolved externals

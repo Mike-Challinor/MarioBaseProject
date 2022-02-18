@@ -1,4 +1,6 @@
 #pragma once
+#ifndef _GAMESCREENMANAGER_H
+#define _GAMESCREENMANAGER_H
 #include "Commons.h"
 #include <SDL.h>
 
@@ -20,3 +22,4 @@ public:
 	void ChangeScreen(SCREENS new_screen);
 };
 
+#endif //_GAMESCREENMANAGER_H
