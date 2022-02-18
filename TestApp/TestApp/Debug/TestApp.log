@@ -1,2 +1,5 @@
-﻿  GameScreenLevel1.cpp
+﻿  Character.cpp
+  GameScreenLevel1.cpp
+  GameScreenManager.cpp
+  Generating Code...
   TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe

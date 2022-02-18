@@ -7,8 +7,6 @@
 #include "Commons.h"
 #include "GameScreenManager.h"
 
-
-
 using namespace std;
 
 //Globals

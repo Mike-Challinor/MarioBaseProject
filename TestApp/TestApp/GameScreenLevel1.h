@@ -13,6 +13,7 @@ class GameScreenLevel1 : GameScreen
 
 private:
 	Texture2D* m_background_texture;
+	bool SetUpLevel();
 	Character* my_character;
 
 public:
@@ -22,8 +23,6 @@ public:
 	void Render() override;
 	void Update(float deltaTime, SDL_Event e) override;
 
-private:
-	bool SetUpLevel();
 };
 
 #endif //_GAMESCREENLEVEL1_H
