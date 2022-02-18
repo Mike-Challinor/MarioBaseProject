@@ -10,6 +10,7 @@ GameScreenLevel1::GameScreenLevel1(SDL_Renderer* renderer) : GameScreen(renderer
 
 GameScreenLevel1::~GameScreenLevel1()
 {	
+	delete m_background_texture;
 	m_background_texture = nullptr;
 }
 
