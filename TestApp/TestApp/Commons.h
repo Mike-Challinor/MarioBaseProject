@@ -1,7 +1,8 @@
 #pragma once
 using namespace std;
 
-const int MOVEMENTSPEED = 100;
+const float MOVEMENTSPEED = 100.0f;
+const float GRAVITY = 260.0f;
 
 struct Vector2D
 {
