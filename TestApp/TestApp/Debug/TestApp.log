@@ -1,11 +1,2 @@
-﻿  Character.cpp
-  GameScreenLevel1.cpp
-  GameScreenManager.cpp
-  Source.cpp
-  Texture2D.cpp
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,58): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,58): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
+﻿  GameScreenLevel1.cpp
   TestApp.vcxproj -> C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe

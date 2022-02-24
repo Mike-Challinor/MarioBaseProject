@@ -16,6 +16,7 @@ protected:
 	Texture2D* m_texture;
 	virtual void MoveLeft(float deltaTime);
 	virtual void MoveRight(float deltaTime);
+	virtual void AddGravity(float deltaTime);
 	bool m_moving_left;
 	bool m_moving_right;
 
