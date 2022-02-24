@@ -34,6 +34,10 @@ void GameScreenLevel1::Update(float deltaTime, SDL_Event e)
 
 bool GameScreenLevel1::SetUpLevel()
 {
+
+	//set up player character
+	my_character = new Character(m_renderer, "Images/Mario.png", Vector2D(64, 330));
+
 	//load texture
 	m_background_texture = new Texture2D(m_renderer);
 	if (!m_background_texture->LoadFromFile("Images/test.bmp"))
@@ -46,7 +50,6 @@ bool GameScreenLevel1::SetUpLevel()
 		return true;
 	}
 
-	//set up player character
-	my_character = new Character(m_renderer, "Images/Mario.png", Vector2D(64, 330));
+	
 	
 }

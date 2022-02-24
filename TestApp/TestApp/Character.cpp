@@ -3,6 +3,7 @@
 
 Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position)
 {
+	m_facing_direction = FACING_RIGHT;
 	m_renderer = renderer;
 	m_position = start_position;
 
@@ -22,7 +23,14 @@ Character::~Character()
 void Character::Render()
 {
 	//draw the character
-	m_texture->Render(m_position, SDL_FLIP_NONE);
+	if (m_facing_direction == FACING_RIGHT)
+	{
+		m_texture->Render(m_position, SDL_FLIP_NONE);
+	}
+	else
+	{
+		m_texture->Render(m_position, SDL_FLIP_HORIZONTAL);
+	}
 }
 
 void Character::Update(float deltaTime, SDL_Event e)
@@ -40,9 +48,11 @@ void Character::Update(float deltaTime, SDL_Event e)
 		{
 		case SDLK_LEFT:
 			m_position.x -= 1;
+			m_facing_direction = FACING_LEFT;
 			break;
 		case SDLK_RIGHT:
 			m_position.x += 1;
+			m_facing_direction = FACING_RIGHT;
 			break;
 		}
 	}
