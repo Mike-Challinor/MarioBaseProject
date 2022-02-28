@@ -3,6 +3,7 @@
 #include "Character.h"
 #include "CharacterMario.h"
 #include "CharacterLuigi.h"
+#include "Collisions.h"
 #include <iostream>
 
 
@@ -36,17 +37,24 @@ void GameScreenLevel1::Render()
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e) 
 {
+
+	if (Collisions::Instance()->Circle(my_mario, my_luigi))
+	{
+		cout << "Circle hit!" << endl;
+	}
+
 	//update character
 	my_mario->Update(deltaTime, e);
 	my_luigi->Update(deltaTime, e);
+
 }
 
 bool GameScreenLevel1::SetUpLevel()
 {
 
-	//set up player character
+	//set up Mario character
 	my_mario = new CharacterMario(m_renderer, "Images/Mario.png", Vector2D(64, 330));
-
+	//set up Luigi character
 	my_luigi = new CharacterLuigi(m_renderer, "Images/Luigi.png", Vector2D(64, 330));
 
 	//load texture
@@ -60,7 +68,5 @@ bool GameScreenLevel1::SetUpLevel()
 	{
 		return true;
 	}
-
-	
 	
 }
