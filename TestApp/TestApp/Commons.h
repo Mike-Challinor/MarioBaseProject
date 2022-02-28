@@ -1,4 +1,8 @@
 #pragma once
+using namespace std;
+
+const float MOVEMENTSPEED = 100.0f;
+const float GRAVITY = 260.0f;
 
 struct Vector2D
 {
@@ -27,4 +31,10 @@ enum SCREENS
 	SCREEN_LEVEL2,
 	SCREEN_GAMEOVER,
 	SCREEN_HIGHSCORES
+};
+
+enum FACING
+{
+	FACING_LEFT,
+	FACING_RIGHT
 };

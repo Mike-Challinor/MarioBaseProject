@@ -5,23 +5,27 @@
 #include "Commons.h"
 
 class Texture2D;
+class Character;
+class CharacterMario;
+class CharacterLuigi;
 
 class GameScreenLevel1 : GameScreen
 {
 
 private:
 	Texture2D* m_background_texture;
-
+	bool SetUpLevel();
+	Character* my_character;
+	Character* my_mario;
+	Character* my_luigi;
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);
 	~GameScreenLevel1();
 
-	void Render() override;
-	void Update(float deltaTime, SDL_Event e) override;
+	void Render();
+	void Update(float deltaTime, SDL_Event e);
 
-private:
-	bool SetUpLevel();
 };
 
 #endif //_GAMESCREENLEVEL1_H
