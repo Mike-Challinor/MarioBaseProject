@@ -67,45 +67,9 @@ void Character::Update(float deltaTime, SDL_Event e)
 	{
 		MoveRight(deltaTime);
 	}
-
-	//Get events
-	SDL_PollEvent(&e);
-
-	//Handle the events
-	switch (e.type)
-	{
-		//Click a key for movement
-	case SDL_KEYDOWN:
-		switch (e.key.keysym.sym)
-		{
-		case SDLK_LEFT:
-			m_moving_left = true;
-			break;
-		case SDLK_RIGHT:
-			m_moving_right = true;
-			break;
-		case SDLK_SPACE:
-			if (m_can_jump)
-			{
-				Jump();
-				break;
-			}
-			break;
-		
-		}
-		break;
-	case SDL_KEYUP:
-		switch (e.key.keysym.sym)
-		{
-		case SDLK_LEFT:
-			m_moving_left = false;
-			break;
-		case SDLK_RIGHT:
-			m_moving_right = false;
-			break;
-		}
-	}
 	
+	Character:Update(deltaTime, e);
+
 }
 
 void Character::SetPosition(Vector2D new_position)
