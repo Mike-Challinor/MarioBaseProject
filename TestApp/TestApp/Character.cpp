@@ -52,7 +52,6 @@ void Character::Update(float deltaTime, SDL_Event e)
 		if (m_jump_force <= 0.0f)
 		{
 			m_jumping = false;
-			
 		}
 			
 	}
@@ -68,8 +67,6 @@ void Character::Update(float deltaTime, SDL_Event e)
 	{
 		MoveRight(deltaTime);
 	}
-	
-	Character:Update(deltaTime, e);
 
 }
 

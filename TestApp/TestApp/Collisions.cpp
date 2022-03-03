@@ -20,7 +20,6 @@ Collisions* Collisions::Instance()
 	}
 
 	return m_instance;
-
 }
 
 bool Collisions::Circle(Character* character1, Character* character2)

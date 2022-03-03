@@ -11,31 +11,13 @@ class Texture2D;
 
 class CharacterMario : public Character
 {
-protected:
-	SDL_Renderer* m_renderer;
-	Vector2D m_position;
-	Texture2D* m_texture;
-	virtual void MoveLeft(float deltaTime);
-	virtual void MoveRight(float deltaTime);
-	virtual void AddGravity(float deltaTime);
-	virtual void Jump();
-	bool m_moving_left;
-	bool m_moving_right;
-	bool m_jumping;
-	bool m_can_jump;
-	float m_jump_force;
 
 public:
 	CharacterMario(SDL_Renderer* renderer, string imagePath, Vector2D start_position);
 	~CharacterMario();
 
-	virtual void Render();
-	virtual void Update(float deltaTime, SDL_Event e);
-	void SetPosition(Vector2D new_position);
-	Vector2D GetPosition();
+	void Update(float deltaTime, SDL_Event e);
 
-private:
-	FACING m_facing_direction;
 };
 
 #endif //_MARIOCHARACTER_H
