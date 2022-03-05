@@ -1,7 +1,6 @@
 #pragma once
 #ifndef _LEVELMAP_H
-#define _LEVELMAP_
-
+#define _LEVELMAP_H
 #include "constants.h"
 
 class LevelMap
@@ -17,4 +16,4 @@ private:
 
 };
 
-#endif
+#endif // _LEVELMAP_H

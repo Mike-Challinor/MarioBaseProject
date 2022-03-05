@@ -19,7 +19,7 @@ LevelMap::LevelMap(int map[MAP_HEIGHT][MAP_WIDTH])
 	{
 		for (unsigned int j = 0; j < MAP_WIDTH; j++)
 		{
-			m_map[i][j] = m_map[i][j];
+			m_map[i][j] = map[i][j];
 		}
 	}
 }

@@ -146,7 +146,7 @@ bool Update()
 			return true;
 			break;
 		}
-
+		break;
 	case SDL_MOUSEBUTTONDOWN:
 		switch (e.button.button)
 		{
