@@ -55,7 +55,7 @@ bool GameScreenLevel1::SetUpLevel()
 	//set up Mario character
 	my_mario = new CharacterMario(m_renderer, "Images/Mario.png", Vector2D(128, 330));
 	//set up Luigi character
-	my_luigi = new CharacterLuigi(m_renderer, "Images/Luigi2.png", Vector2D(64, 330));
+	my_luigi = new CharacterLuigi(m_renderer, "Images/Luigi.png", Vector2D(64, 330));
 
 	//load texture
 	m_background_texture = new Texture2D(m_renderer);
