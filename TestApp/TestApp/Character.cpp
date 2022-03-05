@@ -1,5 +1,4 @@
 #include "Character.h"
-#include "Texture2D.h"
 
 Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position)
 {

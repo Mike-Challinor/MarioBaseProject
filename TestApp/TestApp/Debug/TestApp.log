@@ -1,2 +1,17 @@
-﻿  GameScreenLevel1.cpp
+﻿  Character.cpp
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterLuigi.cpp
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterMario.cpp
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Collisions.cpp
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameScreenLevel1.cpp
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(37,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
   TestApp.vcxproj -> C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe

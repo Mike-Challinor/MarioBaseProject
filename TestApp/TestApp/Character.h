@@ -5,8 +5,7 @@
 #include <string>
 #include <SDL.h>
 #include "Commons.h"
-
-class Texture2D;
+#include "Texture2D.h"
 
 class Character
 {
@@ -34,6 +33,8 @@ public:
 	void SetPosition(Vector2D new_position);
 	Vector2D GetPosition();
 	float GetCollisionRadius();
+
+	Rect2D GetCollisionBox(){ return Rect2D(m_position.x, m_position.y, m_texture->GetWidth(), m_texture->GetHeight()); }
 
 private:
 	FACING m_facing_direction;
