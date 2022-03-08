@@ -2,6 +2,7 @@
 #ifndef _POWBLOCK_H
 #define _POWBLOCK_H
 #include <SDL.h>
+#include <iostream>
 #include "LevelMap.h"
 #include "Commons.h"
 #include "Texture2D.h"

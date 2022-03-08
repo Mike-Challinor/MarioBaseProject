@@ -1,16 +1,21 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
 ﻿  GameScreenLevel1.cpp
-=======
-﻿  Source.cpp
->>>>>>> ade143456c58bfd697fdfc45e80d402fd2ba20f7
-  TestApp.vcxproj -> C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
-=======
-﻿  GameScreen.cpp
-  GameScreenLevel1.cpp
-  GameScreenManager.cpp
-  Source.cpp
-  Texture2D.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  PowBlock.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(14,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(15,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(34,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,43): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,62): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,68): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,68): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,87): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,87): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Generating Code...
   TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
->>>>>>> Stashed changes

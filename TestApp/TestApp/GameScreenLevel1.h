@@ -9,6 +9,7 @@ class Texture2D;
 class Character;
 class CharacterMario;
 class CharacterLuigi;
+class PowBlock;
 
 class GameScreenLevel1 : GameScreen
 {
@@ -20,6 +21,7 @@ private:
 	Character* my_luigi;
 	void SetLevelMap();
 	LevelMap* m_level_map;
+	PowBlock* m_pow_block;
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);
@@ -27,6 +29,7 @@ public:
 
 	void Render();
 	void Update(float deltaTime, SDL_Event e);
+	void UpdatePOWBlock();
 
 };
 

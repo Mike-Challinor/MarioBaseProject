@@ -37,6 +37,9 @@ public:
 
 	Rect2D GetCollisionBox(){ return Rect2D(m_position.x, m_position.y, m_texture->GetWidth(), m_texture->GetHeight()); }
 
+	bool IsJumping() { return true; }
+	void CancelJump() { m_jumping = false; }
+
 private:
 	FACING m_facing_direction;
 	LevelMap* m_current_level_map;
