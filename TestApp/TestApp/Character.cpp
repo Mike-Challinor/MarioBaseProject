@@ -8,6 +8,7 @@ Character::Character(SDL_Renderer* renderer, string imagePath, Vector2D start_po
 	m_position = start_position;
 	m_moving_left = false;
 	m_moving_right = false;
+	m_collision_radius = 15.0f;
 
 	//load texture
 	m_texture = new Texture2D(m_renderer);
@@ -51,7 +52,6 @@ void Character::Update(float deltaTime, SDL_Event e)
 		if (m_jump_force <= 0.0f)
 		{
 			m_jumping = false;
-			
 		}
 			
 	}
@@ -67,8 +67,6 @@ void Character::Update(float deltaTime, SDL_Event e)
 	{
 		MoveRight(deltaTime);
 	}
-	
-	Character:Update(deltaTime, e);
 
 }
 
@@ -117,4 +115,9 @@ void Character::Jump()
 		m_jumping = true;
 		m_can_jump = false;
 	}
+}
+
+float Character::GetCollisionRadius()
+{
+	return m_collision_radius;
 }
