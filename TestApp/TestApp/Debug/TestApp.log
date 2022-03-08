@@ -1,2 +1,12 @@
+<<<<<<< Updated upstream
 ﻿  GameScreenLevel1.cpp
   TestApp.vcxproj -> C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
+=======
+﻿  GameScreen.cpp
+  GameScreenLevel1.cpp
+  GameScreenManager.cpp
+  Source.cpp
+  Texture2D.cpp
+  Generating Code...
+  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe
+>>>>>>> Stashed changes
