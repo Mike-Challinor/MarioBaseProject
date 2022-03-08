@@ -3,6 +3,7 @@
 #define _GAMESCREENLEVEL1_H
 #include "GameScreen.h"
 #include "Commons.h"
+#include "LevelMap.h"
 
 class Texture2D;
 class Character;
@@ -17,6 +18,8 @@ private:
 	bool SetUpLevel();
 	Character* my_mario;
 	Character* my_luigi;
+	void SetLevelMap();
+	LevelMap* m_level_map;
 
 public:
 	GameScreenLevel1(SDL_Renderer* renderer);
