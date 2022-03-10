@@ -1,11 +1,53 @@
-﻿  GameScreenLevel1.cpp
+﻿  Character.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterKoopa.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(11,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(12,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(55,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(59,10): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(63,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(63,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(63,61): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(63,61): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(66,66): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(66,66): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(66,85): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(66,85): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  CharacterLuigi.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  CharacterMario.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Collisions.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  GameScreenLevel1.cpp
 C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 C:\GitHub\MarioBaseProject\TestApp\TestApp\GameScreenLevel1.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
-C:\GitHub\MarioBaseProject\TestApp\TestApp\GameScreenLevel1.cpp(242,24): warning C4552: '!=': result of expression not used
   GameScreenManager.cpp
+  LevelMap.cpp
+  PowBlock.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(14,44): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(15,42): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(34,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,43): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,62): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(37,62): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,68): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,68): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,87): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.cpp(41,87): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  Source.cpp
   Texture2D.cpp
 C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
 C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data

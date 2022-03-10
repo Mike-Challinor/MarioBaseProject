@@ -55,7 +55,7 @@ void GameScreenLevel1::Render()
 
 void GameScreenLevel1::Update(float deltaTime, SDL_Event e) 
 {
-
+	
 	//do screenshake if required
 	if (m_screenshake)
 	{
@@ -228,6 +228,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 					if (m_enemies[i]->GetInjured())
 					{
 						m_enemies[i]->SetAlive(false);
+						
 					}
 					else
 					{
@@ -239,7 +240,7 @@ void GameScreenLevel1::UpdateEnemies(float deltaTime, SDL_Event e)
 			//if the enemy is no longer alive then schedule it for deletion
 			if (!m_enemies[i]->GetAlive())
 			{
-				enemyIndexToDelete != -1;
+				enemyIndexToDelete = i;
 			}
 		}
 
