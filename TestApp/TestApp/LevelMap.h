@@ -14,7 +14,7 @@ public:
 
 private:
 	int** m_map;
-	
+
 
 };
 
