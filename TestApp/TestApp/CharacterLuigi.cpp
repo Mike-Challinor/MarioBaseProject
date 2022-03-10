@@ -12,9 +12,6 @@ CharacterLuigi::~CharacterLuigi()
 void CharacterLuigi::Update(float deltaTime, SDL_Event e)
 {
 
-	//Get Events
-	SDL_PollEvent(&e);
-
 	//Handle the events
 	switch (e.type)
 	{

@@ -160,11 +160,11 @@ void GameScreenLevel1::UpdatePOWBlock()
 		if (m_pow_block->isAvailable())
 		{
 			//collided while jumping
-			if (my_mario->IsJumping())
+			if (my_luigi->IsJumping())
 			{
 				DoScreenShake();
 				m_pow_block->TakeHit();
-				my_mario->CancelJump();
+				my_luigi->CancelJump();
 			}
 		}
 	}
