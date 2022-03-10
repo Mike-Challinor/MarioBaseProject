@@ -46,6 +46,5 @@ int LevelMap::GetTileAt(unsigned int h, unsigned int w)
 
 void LevelMap::ChangeTileAt(unsigned int row, unsigned int column, unsigned int new_value)
 {
-	row = new_value;
-	column = new_value;
+	m_map[row][column] = m_map[new_value][new_value];
 }
