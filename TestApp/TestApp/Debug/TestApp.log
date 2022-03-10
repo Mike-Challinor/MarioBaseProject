@@ -1,15 +1,15 @@
-﻿  Character.cpp
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  CharacterKoopa.cpp
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(38,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(5,2): error C2248: 'Character::m_facing_direction': cannot access private member declared in class 'Character'
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(44): message : see declaration of 'Character::m_facing_direction'
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(11): message : see declaration of 'Character'
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(6,2): error C2065: 'm_movement_speed': undeclared identifier
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(11,1): error C3867: 'Texture2D::GetHeight': non-standard syntax; use '&' to create a pointer to member
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(10,33): error C2440: '=': cannot convert from 'int (__thiscall Texture2D::* )(void)' to 'float'
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(10,33): message : There is no context in which this conversion is possible
-C:\Users\c026128l\Documents\GitHub\MarioBaseProject\TestApp\TestApp\CharacterKoopa.cpp(11,1): error C2143: syntax error: missing ';' before '}'
+﻿  GameScreenLevel1.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,113): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Character.h(39,89): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,114): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\PowBlock.h(16,90): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\GameScreenLevel1.cpp(40,20): warning C4018: '<': signed/unsigned mismatch
+C:\GitHub\MarioBaseProject\TestApp\TestApp\GameScreenLevel1.cpp(242,24): warning C4552: '!=': result of expression not used
+  GameScreenManager.cpp
+  Texture2D.cpp
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,42): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,58): warning C4838: conversion from 'float' to 'int' requires a narrowing conversion
+C:\GitHub\MarioBaseProject\TestApp\TestApp\Texture2D.cpp(73,58): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Generating Code...
+  TestApp.vcxproj -> C:\GitHub\MarioBaseProject\TestApp\Debug\TestApp.exe

@@ -24,6 +24,7 @@ protected:
 	bool m_can_jump;
 	float m_jump_force;
 	float m_collision_radius;
+	bool m_alive;
 
 public:
 	Character(SDL_Renderer* renderer, string imagePath, Vector2D start_position, LevelMap* map);
@@ -39,6 +40,9 @@ public:
 
 	bool IsJumping() { return m_jumping; }
 	void CancelJump() { m_jumping = false; }
+
+	void SetAlive(bool isAlive);
+	bool GetAlive() { return m_alive; }
 
 private:
 	FACING m_facing_direction;

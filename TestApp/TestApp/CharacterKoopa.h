@@ -21,6 +21,7 @@ public:
 	void Jump();
 	void Update(float deltaTime, SDL_Event e);
 	void Render();
+	bool GetInjured() { return m_injured; }
 };
 
 #endif //_CHARACTERKOOPA_H

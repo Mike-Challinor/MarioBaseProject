@@ -1,20 +1,5 @@
 #include "CharacterKoopa.h"
 
-void CharacterKoopa::FlipRightwayUp()
-{
-	if (m_facing_direction == FACING_RIGHT)
-	{
-		m_facing_direction = FACING_LEFT;
-	}
-
-	else
-	{
-		m_facing_direction = FACING_RIGHT;
-	}
-
-	m_injured = false;
-	Jump();
-}
 
 CharacterKoopa::CharacterKoopa(SDL_Renderer* renderer, string imagePath, LevelMap* map, Vector2D start_position, FACING start_facing, float movement_speed) : Character(renderer, imagePath, start_position, map)
 {
@@ -29,24 +14,6 @@ CharacterKoopa::CharacterKoopa(SDL_Renderer* renderer, string imagePath, LevelMa
 
 CharacterKoopa::~CharacterKoopa()
 {
-}
-
-void CharacterKoopa::TakeDamage()
-{
-	m_injured = true;
-	m_injured_time = INJURED_TIME;
-	Jump();
-
-}
-
-void CharacterKoopa::Jump()
-{
-	if (!m_jumping)
-	{
-		m_jump_force = INITIAL_JUMP_FORCE_SMALL;
-		m_jumping = true;
-		m_can_jump = false;
-	}
 }
 
 void CharacterKoopa::Update(float deltaTime, SDL_Event e)
@@ -95,6 +62,9 @@ void CharacterKoopa::Render()
 	//{xPos, yPos, width of sprite, height of sprite
 	SDL_Rect portion_of_sprite = { left, 0, m_single_sprite_w, m_single_sprite_h };
 
+	//Determine where you want it drawn
+	SDL_Rect destRect = { (int)(m_position.x), (int)(m_position.y), m_single_sprite_w, m_single_sprite_h };
+
 	//then draw it facing the correct direction
 	if (m_facing_direction == FACING_RIGHT)
 	{
@@ -103,5 +73,40 @@ void CharacterKoopa::Render()
 	else
 	{
 		m_texture->Render(portion_of_sprite, destRect, SDL_FLIP_HORIZONTAL);
+	}
+}
+
+void CharacterKoopa::FlipRightwayUp()
+{
+	if (m_facing_direction == FACING_RIGHT)
+	{
+		m_facing_direction = FACING_LEFT;
+	}
+
+	else
+	{
+		m_facing_direction = FACING_RIGHT;
+	}
+
+	m_injured = false;
+	Jump();
+}
+
+
+void CharacterKoopa::TakeDamage()
+{
+	m_injured = true;
+	m_injured_time = INJURED_TIME;
+	Jump();
+
+}
+
+void CharacterKoopa::Jump()
+{
+	if (!m_jumping)
+	{
+		m_jump_force = INITIAL_JUMP_FORCE_SMALL;
+		m_jumping = true;
+		m_can_jump = false;
 	}
 }
